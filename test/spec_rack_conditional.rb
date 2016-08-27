@@ -3,6 +3,7 @@ require 'rack/conditional'
 require 'rack/lint'
 require 'rack/mock'
 
+# For test.
 class TestMiddleware
   attr_reader :called
 
@@ -38,6 +39,6 @@ describe Rack::Conditional do
   end
 
   def app
-    -> (_) { [200, { 'Content-Type' => 'text/plain' }, ['Hello, World!']] }
+    proc { [200, { 'Content-Type' => 'text/plain' }, ['Hello, World!']] }
   end
 end

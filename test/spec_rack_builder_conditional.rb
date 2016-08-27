@@ -3,6 +3,7 @@ require 'rack/builder'
 require 'rack/builder/conditional'
 require 'rack/lint'
 
+# For test.
 class TestMiddleware
   def initialize(app)
     @app = app
@@ -27,7 +28,7 @@ describe Rack::Builder do
   def app
     Rack::Builder.new do
       use_if proc { true }, TestMiddleware
-      run -> (_) { [200, { 'Content-Type' => 'text/plain' }, ['It works!']] }
+      run proc { [200, { 'Content-Type' => 'text/plain' }, ['It works!']] }
     end.to_app
   end
 end
