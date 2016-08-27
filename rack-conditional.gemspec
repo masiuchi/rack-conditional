@@ -18,12 +18,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   if RUBY_VERSION >= '2.2.2'
-    spec.add_dependency 'rack'
+    spec.add_dependency 'rack', '~> 0'
   else
     spec.add_dependency 'rack', '~> 1.6.4'
   end
 
   spec.add_development_dependency 'bundler', '~> 1.12'
-  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'minitest', '~> 0'
   spec.add_development_dependency 'rake', '~> 10.0'
 end
