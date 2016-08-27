@@ -31,7 +31,7 @@ Or
 ```ruby
 # config.ru
 require 'rack_conditional'
-use Rack::Conditional, proc { |env| env['REMOTE_ADDR'] == '127.0.0.1' }, ShowException
+use Rack::Conditional, proc { |env| env['REMOTE_ADDR'] == '127.0.0.1' }, ShowExceptions
 ```
 
 ## Contributing
