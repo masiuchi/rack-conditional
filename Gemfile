@@ -8,7 +8,9 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.2.2')
 end
 
 group :development do
-  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.0.0')
+  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9.2')
+    gem 'mime-types', '< 2.3'
+  elsif Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.0.0')
     gem 'mime-types', '< 3.0'
   end
   if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9.3')
