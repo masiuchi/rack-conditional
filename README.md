@@ -34,6 +34,15 @@ require 'rack_conditional'
 use Rack::Conditional, proc { |env| env['REMOTE_ADDR'] == '127.0.0.1' }, ShowExceptions
 ```
 
+Or
+
+```ruby
+# Sinatra
+class YourApp < Sinatra::Base
+  use_if proc { |env| env['REMOTE_ADDR'] == '127.0.0.1' }, ShowExceptions
+end
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/masiuchi/rack-conditional.
