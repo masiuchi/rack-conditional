@@ -11,4 +11,7 @@ group :development do
   if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.0.0')
     gem 'mime-types', '< 3.0'
   end
+  if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9.3')
+    gem 'i18n', '< 0.7.0'
+  end
 end
