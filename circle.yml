@@ -16,8 +16,8 @@ deployment:
     branch: master
     commands:
       - if [ -z "echo `git diff --name-only HEAD~` | grep lib/rack/conditional/version.rb" ]; then exit; fi
-      - curl -u $RUBYGEMS_USERNAME:$RUBYGEMS_PASSWORD https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
+      - curl -u masiuchi:$RUBYGEMS_PASSWORD https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
       - git config user.name "Masahiro Iuchi"
-      - git config user.email $GITHUB_EMAIL
+      - git config user.email masahiro.iuchi@gmail.com
       - bundle exec rake build
       - bundle exec rake release
