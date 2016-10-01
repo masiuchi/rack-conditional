@@ -14,7 +14,9 @@ Gem::Specification.new do |spec|
                      + 'This is a port of Plack::Middleware::Conditional.'
   spec.homepage      = 'https://github.com/masiuchi/rack-conditional'
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^test/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^test/})
+  end
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = '>= 1.8.7'
