@@ -43,6 +43,19 @@ class YourApp < Sinatra::Base
 end
 ```
 
+Or
+
+```ruby
+# Rails
+# config/application.rb
+require 'rack_conditional'
+module YourApp
+  class Application < Rails::Application
+    config.middleware.use_if proc { |env| env['REMOTE_ADDR'] == '127.0.0.1' }, ShowExceptions
+  end
+end
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/masiuchi/rack-conditional.
