@@ -10,7 +10,9 @@ if [ -z "$CIRCLECI" ]; then
   exit
 fi
 
-if [ -z "echo `git diff --name-only HEAD~` | grep $version_file" ]; then
+changed_files=`git diff --name-only HEAD~`
+has_version_file=`echo $changed_files | grep $version_file`
+if [ -z "$has_version_file" ]; then
   echo "This commit does not change $version_file"
   exit
 fi
