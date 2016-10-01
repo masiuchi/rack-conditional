@@ -19,8 +19,8 @@ describe Rack::Builder do
     test_app = app
     test_app.must_be_instance_of Rack::Conditional
     test_app.instance_variable_get('@app').must_be_instance_of Proc
-    test_app\
-      .instance_variable_get('@middleware').must_be_instance_of TestMiddleware
+    middleware = test_app.instance_variable_get('@middleware')
+    middleware.must_be_instance_of TestMiddleware
   end
 
   private
