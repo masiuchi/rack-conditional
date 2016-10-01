@@ -4,7 +4,8 @@ machine:
 
 test:
   pre:
-    - gem install rubocop
+    - gem install reek rubocop
   override:
     - bundle exec rake
     - rubocop
+    - reek ./lib/
