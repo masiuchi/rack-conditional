@@ -28,7 +28,7 @@ describe Rack::Builder do
   def app
     Rack::Builder.new do
       use_if proc { true }, TestMiddleware
-      run proc { [200, { 'Content-Type' => 'text/plain' }, ['It works!']] }
+      run(proc { [200, { 'Content-Type' => 'text/plain' }, ['It works!']] })
     end.to_app
   end
 end
