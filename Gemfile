@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 gemspec
 
 if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.2.2')
-  gem 'rack', '>= 1.6.4', '< 2.0.0'
+  gem 'rack', '>= 1.6.11', '< 2.0.0'
+else
+  gem 'rack', '>= 2.0.6'
 end
 
 group :development do
