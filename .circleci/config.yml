@@ -5,11 +5,11 @@ jobs:
       - image: circleci/ruby
     steps:
       - checkout
-      - run
+      - run:
         name: Install gems
         command: |
           gem install reek rubocop
-      - run
+      - run:
         name: Run tests
         command: |
           bundle exec rake
