@@ -6,6 +6,10 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Check Ruby version
+          command: |
+            ruby -v
+      - run:
           name: Install gems
           command: |
             bundle install
