@@ -8,6 +8,7 @@ jobs:
       - run:
           name: Install gems
           command: |
+            bundle install
             gem install reek rubocop
       - run:
           name: Run tests
