@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby
+    steps:
+      - checkout
+      - run
+        name: Install gems
+        command: |
+          gem install reek rubocop
+      - run
+        name: Run tests
+        command: |
+          bundle exec rake
+          rubocop
+          reek ./lib/
