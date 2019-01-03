@@ -6,12 +6,12 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install gems
-        command: |
-          gem install reek rubocop
+          name: Install gems
+          command: |
+            gem install reek rubocop
       - run:
-        name: Run tests
-        command: |
-          bundle exec rake
-          rubocop
-          reek ./lib/
+          name: Run tests
+          command: |
+            bundle exec rake
+            rubocop
+            reek ./lib/
