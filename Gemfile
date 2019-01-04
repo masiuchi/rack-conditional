@@ -7,10 +7,10 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.2.2')
   gem 'rack', '>= 1.6.4', '< 2.0.0'
 end
 
-if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.1')
-  nokogiri_version = '~> 1.6.8'
-elsif Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9')
+if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9')
   nokogiri_version = '<= 1.6.1'
+elsif Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.1')
+  nokogiri_version = '~> 1.6.8'
 end
 gem 'nokogiri', nokogiri_version if nokogiri_version
 
