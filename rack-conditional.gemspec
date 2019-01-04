@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('../lib', __FILE__)  # rubocop:disable all
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rack/conditional/version'
 
@@ -19,11 +18,11 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 1.8.7'
+  spec.required_ruby_version = '>= 1.8.7'  # rubocop:disable all
 
   spec.add_dependency 'rack', '>= 1.6.4'
 
-  spec.add_development_dependency 'bundler', '~> 1.12'
+  spec.add_development_dependency 'bundler', '>= 1.12'
   spec.add_development_dependency 'minitest', '~> 5.9'
   spec.add_development_dependency 'rails'
   spec.add_development_dependency 'rake', '~> 10.0'
