@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 1.8.7'  # rubocop:disable all
 
-  spec.add_dependency 'rack', '>= 1.6.4'
+  spec.add_dependency 'rack', '>= 1.6.11'
 
   spec.add_development_dependency 'bundler', '>= 1.12'
   spec.add_development_dependency 'minitest', '~> 5.9'
