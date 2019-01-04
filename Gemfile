@@ -4,10 +4,11 @@ source 'https://rubygems.org'
 gemspec
 
 if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.2.2')
-  gem 'rack', '>= 1.6.11', '< 2.0.0'
+  rack_version = ['>= 1.6.11', '< 2.0.0']
 else
-  gem 'rack', '>= 2.0.6'
+  rack_version = '>= 2.0.6'
 end
+gem 'rack', rack_version if rack_version
 
 if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9')
   nokogiri_version = '< 1.6'
