@@ -8,7 +8,7 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.2.2')
 end
 
 if Gem::Version.create(RUBY_VERSION) < Gem::Version.create('1.9')
-  nokogiri_version = '<= 1.6.1'
+  nokogiri_version = '< 1.6'
 elsif Gem::Version.create(RUBY_VERSION) < Gem::Version.create('2.1')
   nokogiri_version = '~> 1.6.8'
 end
