@@ -10,7 +10,7 @@ jobs:
     # https://github.com/actions/setup-ruby
     strategy:
       matrix:
-        ruby: [ '1.8.x', '1.9.x', '2.0.x', '2.1.x'. '2.2.x', '2.3.x', '2.4.x', '2.5.x', '2.6.x' ]
+        ruby: [ '1.8.x', '1.9.x', '2.0.x', '2.1.x', '2.2.x', '2.3.x', '2.4.x', '2.5.x', '2.6.x' ]
 
     name: Ruby ${{ matrix.ruby }}
 
