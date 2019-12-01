@@ -1,4 +1,3 @@
-dist: precise
 language: ruby
 cache: bundler
 rvm:
@@ -9,6 +8,5 @@ rvm:
   - 2.1.10
   - 2.0.0
   - 1.9.3
-  - 1.8.7
 before_install:
   - gem install bundler -v 1.12
