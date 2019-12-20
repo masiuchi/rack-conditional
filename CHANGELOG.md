@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 ### Changed
+
+### Fixed
+
+## [0.3.2] - 2019-12-21
+### Added
+
+### Changed
 - Update rack version to avoid vulnerability
 
 ### Fixed
