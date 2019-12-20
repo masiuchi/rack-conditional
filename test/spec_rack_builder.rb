@@ -17,10 +17,10 @@ end
 describe Rack::Builder do
   it 'can use "use_if"' do
     test_app = app
-    test_app.must_be_instance_of Rack::Conditional
-    test_app.instance_variable_get('@app').must_be_instance_of Proc
+    _(test_app).must_be_instance_of Rack::Conditional
+    _(test_app.instance_variable_get('@app')).must_be_instance_of Proc
     middleware = test_app.instance_variable_get('@middleware')
-    middleware.must_be_instance_of TestMiddleware
+    _(middleware).must_be_instance_of TestMiddleware
   end
 
   private
