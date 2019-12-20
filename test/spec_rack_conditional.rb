@@ -28,7 +28,7 @@ describe Rack::Conditional do
       app, condition, Rack::Conditional::TestMiddleware
     )
     Rack::Lint.new(conditional).call(request)
-    conditional.instance_variable_get('@middleware').called.must_equal true
+    _(conditional.instance_variable_get('@middleware').called).must_equal true
   end
 
   it 'does not execute middleware' do
@@ -37,7 +37,7 @@ describe Rack::Conditional do
       app, condition, Rack::Conditional::TestMiddleware
     )
     Rack::Lint.new(conditional).call(request)
-    conditional.instance_variable_get('@middleware').called.must_be_nil
+    _(conditional.instance_variable_get('@middleware').called).must_be_nil
   end
 
   private

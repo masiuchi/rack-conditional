@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Update rack version to avoid vulnerability
 
 ### Fixed
+- Fix test warnings
