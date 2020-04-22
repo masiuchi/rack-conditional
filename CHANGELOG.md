@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Add LICENSE file. #27
 - Run tests with Ruby 2.7 on GitHub Actions. #25
 
 ### Changed
