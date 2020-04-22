@@ -6,8 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Run tests with Ruby 2.7 on GitHub Actions. #25
 
 ### Changed
+- Update lower Ruby version to 2.0.0. #24
 
 ### Fixed
 
