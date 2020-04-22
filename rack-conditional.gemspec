@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 1.8.7'  # rubocop:disable all
+  spec.required_ruby_version = '>= 2.0.0'  # rubocop:disable all
 
   spec.add_dependency 'rack', '>= 1.6.12'
 
