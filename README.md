@@ -57,6 +57,10 @@ module YourApp
 end
 ```
 
+# License
+
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/masiuchi/rack-conditional.
