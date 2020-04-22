@@ -5,6 +5,7 @@ require 'rack/conditional/version'
 Gem::Specification.new do |spec|
   spec.name          = 'rack-conditional'
   spec.version       = Rack::Conditional::VERSION
+  spec.licenses      = ['GPL-1.0-or-later', 'Artistic-1.0']
   spec.authors       = ['Masahiro Iuchi']
   spec.email         = ['masahiro.iuchi@gmail.com']
 
