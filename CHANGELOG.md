@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Run tests with Ruby 2.7 on GitHub Actions. #25
 
 ### Changed
+- Update nokogiri version to avoid vulnerability (and update lower Ruby version to 2.3.0). #28
 - Update lower Ruby version to 2.0.0. #24
 
 ### Fixed
