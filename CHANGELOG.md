@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+
+### Changed
+
+### Fixed
+
+## [0.3.4] - 2020-04-24
+### Added
 - Add LICENSE file. #27
 - Run tests with Ruby 2.7 on GitHub Actions. #25
 
